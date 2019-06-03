@@ -8,14 +8,14 @@ describe App do
       expect(last_response.status).to eq(200)
     end
 
-    it 'has a link with the text "List a Puppy"' do
+    it 'has a link with the text "List A Puppy"' do
       visit '/'
-      expect(page).to have_link("List a Puppy")
+      expect(page).to have_link("List A Puppy")
     end
 
     it 'has a link to list a puppy that links to /new' do
       visit '/'
-      expect(page).to have_link("List a Puppy", href: '/new')
+      expect(page).to have_link("List A Puppy", href: '/new')
     end
   end
 
@@ -35,7 +35,7 @@ describe App do
 
       expect(page).to have_field(:name)
       expect(page).to have_field(:breed)
-      expect(page).to have_field(:age)
+      expect(page).to have_field(:months_old)
     end
   end
 
@@ -46,7 +46,7 @@ describe App do
 
       fill_in(:name, :with => "Butch")
       fill_in(:breed, :with => "Mastiff")
-      fill_in(:age, :with => "6")
+      fill_in(:months_old, :with => "6")
 
       #the below css will match any element (input or button)
       #with a type attribute set to submit
@@ -72,7 +72,7 @@ describe App do
 
       fill_in(:name, :with => "Byron")
       fill_in(:breed, :with => "Poodle")
-      fill_in(:age, :with => "9")
+      fill_in(:months_old, :with => "9")
 
       #the below css will match any element (input or button)
       #with a type attribute set to submit
@@ -85,3 +85,4 @@ describe App do
   end
 
 end
+klsdlksd
