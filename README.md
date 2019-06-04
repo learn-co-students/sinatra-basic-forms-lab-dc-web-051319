@@ -20,7 +20,7 @@ follow a link to a form where they can enter a puppy's information, and, upon
 submission, view the puppy's information.
 
 1. Build out a puppy class in `models/puppy.rb`. Puppies should have `name`,
-   `breed`, and `months_old` attributes. You will need to be able to pass these three
+   `breed`, and `age` attributes. You will need to be able to pass these three
    attributes to initialization, as well as readers or accessors for the attributes.
 
 2. In `app.rb` build out a GET request to load a homepage. The homepage
