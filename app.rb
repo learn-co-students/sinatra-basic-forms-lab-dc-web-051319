@@ -11,11 +11,11 @@ get '/new' do
 end 
 
 post '/puppy' do 
-  @name = params["name"]
-  @breed = params["breed"]
-  age = params["age"]
-  @months_old = age.to_s
-  puppy = Puppy.new(@name, @breed, @months_old)
+  puppy = Puppy.new(params["name"], params["breed"], params["age"])
+ 
+  @name = puppy.name 
+  @breed = puppy.breed 
+  @months_old = puppy.months_old 
   
   erb :display_puppy 
 end 
